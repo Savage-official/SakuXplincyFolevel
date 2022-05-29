@@ -17,11 +17,11 @@ Plincy = Client(
     
     )
 
-user = PyTgCalls(shivam,
+user = PyTgCalls(Plincy,
     cache_duration=100,
     overload_quiet_mode=True,)
 
-call_py = PyTgCalls(shivam, overload_quiet_mode=True)
+call_py = PyTgCalls(Plincy, overload_quiet_mode=True)
 
 with Client("Love", API_ID, API_HASH, bot_token=BOT_TOKEN) as app:
     me_bot = app.get_me()
